@@ -8,12 +8,25 @@ import Revision from '../screens/Revision';
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => (
-    <Tab.Navigator>
-        <Tab.Screen name="Home" component={Home}/>
-        <Tab.Screen name="CustomQuizz" component={CustomQuizz}/>
-        <Tab.Screen name="Révision" component={Revision}/>
-        <Tab.Screen name="Params" component={Params}/>
+    <Tab.Navigator 
+        screenOptions={{
+        tabBarStyle: {  backgroundColor: '#1C2753' }
+    }}>
+        <Tab.Screen name="Home" component={Home} options={sharedStyled}/>
+        <Tab.Screen name="CustomQuizz" component={CustomQuizz} options={sharedStyled}/>
+        <Tab.Screen name="Révision" component={Revision} options={sharedStyled}/>
+        <Tab.Screen name="Params" component={Params} options={sharedStyled}/>
     </Tab.Navigator>
 );
+
+const sharedStyled = {
+    headerStyle: {
+        backgroundColor: '#1C2753',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+}
 
 export default Tabs;
