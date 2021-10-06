@@ -1,0 +1,10 @@
+<FlatList 
+            keyExtractor={item => item.id}
+            data={panneauxObligation}
+            renderItem={({ item }) => (
+                <View style={styles.singlePanneauxContainer}>
+                    <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                    <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
+                        {/* <Image source={item.image} style={styles.panneauxImage}/>
+                        <Text style={styles.text}>{item.description}</Text> */}
+                </View>  )}/>

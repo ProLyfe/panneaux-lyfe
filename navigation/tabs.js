@@ -30,3 +30,5 @@ const sharedStyled = {
 }
 
 export default Tabs;
+
+
