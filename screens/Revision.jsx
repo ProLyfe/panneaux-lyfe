@@ -1,27 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import panneauxObligation from '../panneaux/obligation';
 
 const Revision = () => {
   return (
-    <View style={styles.container}>
-      {/* <Text>Open up App.js to start working on your app!</Text>
-      <Text>Révision</Text> */}
-      <Text>Panneaux d'interdiction</Text>
-      <View style={styles.tableauContainer}>
-        <FlatList 
-            keyExtractor={item => item.id}
-            data={panneauxObligation}
-            renderItem={({ item }) => (
-                <View style={styles.singlePanneauxContainer}>
-                    <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
-                    <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
-                        {/* <Image source={item.image} style={styles.panneauxImage}/>
-                        <Text style={styles.text}>{item.description}</Text> */}
-                </View>
-            )}/>
+      <ScrollView>
+        <View style={styles.container}>
+        <Text style={styles.title}>Obligation</Text>
+            <View style={styles.containerPanneaux}>
+                {panneauxObligation.map(item => (
+                    <View style={styles.singlePanneauxContainer} key={item.id}>
+                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
+                    </View>
+                ))}
+            </View>
         </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -32,22 +27,28 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    color: 'white',
+    fontSize: 23,
+    margin: 10
+  },    
   panneauxImage: {
-      height: 55,
-      width: 55,
+    height: 55,
+    width: 55,
   },
   tableauContainer: {
-      display: 'flex',
-      flexDirection: 'row',
-      borderColor: 'white',
-      borderWidth: 5.7,
-      borderRadius: 20,
-      justifyContent: 'space-evenly',
-      alignItems: 'center',
-      width: '90%',
-      backgroundColor: '#1C2753',
-      flex: 1,
-
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    width: '90%',
+    backgroundColor: '#1C2753',
+  },
+  containerPanneaux: {
+    borderColor: 'white',
+    borderWidth: 3,
+    borderWidth: 5,
+    borderRadius: 18,
   },
   singleContainer: {
     borderColor: 'white',
@@ -62,6 +63,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    width: '90%',
+    backgroundColor: '#1C2753',
   },
   text: {
     color: 'white',
