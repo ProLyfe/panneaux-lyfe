@@ -6,7 +6,9 @@ const Revision = () => {
   return (
       <ScrollView>
         <View style={styles.container}>
-        <Text style={styles.title}>Obligation</Text>
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>Obligation</Text>
+            </View> 
             <View style={styles.containerPanneaux}>
                 {panneauxObligation.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
@@ -27,6 +29,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  titleContainer: {
+    width: '90%',
+  },  
   title: {
     color: 'white',
     fontSize: 23,
@@ -46,13 +51,12 @@ const styles = StyleSheet.create({
   },
   containerPanneaux: {
     borderColor: 'white',
-    borderWidth: 3,
-    borderWidth: 5,
-    borderRadius: 18,
+    borderWidth: 4,
+    borderRadius: 12,
   },
   singleContainer: {
     borderColor: 'white',
-    borderWidth: 2,
+    borderWidth: 1,
     height: 80,
     width: '50%',
     display: 'flex',
