@@ -4,6 +4,7 @@ import panneauxObligation from '../panneaux/obligation';
 import panneauxDanger from '../panneaux/danger';
 import panneauxIntersectionEtPriorite from '../panneaux/intersection-priorite';
 import interdiction from '../panneaux/interdiction';
+import panneauxIndication from '../panneaux/indication';
 
 const Revision = () => {
   return (
@@ -33,7 +34,7 @@ const Revision = () => {
                 ))}
             </View> */}
 
-            <View style={styles.titleContainer}>
+            {/* <View style={styles.titleContainer}>
               <Text style={styles.title}>Interdiction</Text>
             </View> 
             <View style={styles.containerPanneaux}>
@@ -43,13 +44,25 @@ const Revision = () => {
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
                     </View>
                 ))}
-            </View>
+            </View> */}
 
-            <View style={styles.titleContainer}>
+            {/* <View style={styles.titleContainer}>
               <Text style={styles.title}>Intersection et Priorité</Text>
             </View> 
             <View style={styles.containerPanneaux}>
                 {panneauxIntersectionEtPriorite.map(item => (
+                    <View style={styles.singlePanneauxContainer} key={item.id}>
+                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
+                    </View>
+                ))}
+            </View> */}
+
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>Indication</Text>
+            </View> 
+            <View style={styles.containerPanneaux}>
+                {panneauxIndication.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
                         <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
@@ -79,7 +92,7 @@ const styles = StyleSheet.create({
   panneauxImage: {
     height: 55,
     width: 55,
-    resizeMode:'contain'
+    resizeMode:'contain',
   },
   tableauContainer: {
     display: 'flex',
