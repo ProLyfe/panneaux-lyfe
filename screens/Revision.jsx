@@ -5,58 +5,78 @@ import panneauxDanger from '../panneaux/danger';
 import panneauxIntersectionEtPriorite from '../panneaux/intersection-priorite';
 import interdiction from '../panneaux/interdiction';
 import panneauxIndication from '../panneaux/indication';
+import panneauxServices from '../panneaux/services';
+
+import PanneauxObligation from '../components/PanneauxObligation';
+import PanneauxDanger from '../components/PanneauxDanger';
+import PanneauxInterdiction from '../components/PanneauxInterdiction';
+import PanneauxIntersectionEtPriorite from '../components/PanneauxIntersectionEtPriorite';
+import PanneauxIndication from '../components/PanneauxIndication';
+import PanneauxServices from '../components/PanneauxServices';
 
 const Revision = () => {
   return (
       <ScrollView>
         <View style={styles.container}>
-            {/* <View style={styles.titleContainer}>
+            <View style={styles.titleContainer}>
               <Text style={styles.title}>Obligation</Text>
             </View> 
             <View style={styles.containerPanneaux}>
                 {panneauxObligation.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
-                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}>
+                          {/* <Image source={item.image} style={styles.panneauxImage}/> */}
+                          <PanneauxObligation id={item.id}/>
+                        </View>
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
                     </View>
                 ))}
-            </View> */}
+            </View>
 
-            {/* <View style={styles.titleContainer}>
+            <View style={styles.titleContainer}>
               <Text style={styles.title}>Danger</Text>
             </View> 
             <View style={styles.containerPanneaux}>
                 {panneauxDanger.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
-                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}>
+                          {/* <Image source={item.image} style={styles.panneauxImage}/> */}
+                          <PanneauxDanger id={item.id}/>
+                        </View>
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
                     </View>
                 ))}
-            </View> */}
+            </View>
 
-            {/* <View style={styles.titleContainer}>
+            <View style={styles.titleContainer}>
               <Text style={styles.title}>Interdiction</Text>
             </View> 
             <View style={styles.containerPanneaux}>
                 {interdiction.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
-                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}>
+                          {/* <Image source={item.image} style={styles.panneauxImage}/> */}
+                          <PanneauxInterdiction id={item.id}/>
+                        </View>
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
                     </View>
                 ))}
-            </View> */}
+            </View>
 
-            {/* <View style={styles.titleContainer}>
+            <View style={styles.titleContainer}>
               <Text style={styles.title}>Intersection et Priorité</Text>
             </View> 
             <View style={styles.containerPanneaux}>
                 {panneauxIntersectionEtPriorite.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
-                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}>
+                          {/* <Image source={item.image} style={styles.panneauxImage}/> */}
+                            <PanneauxIntersectionEtPriorite id={item.id}/>
+                          </View>
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
                     </View>
                 ))}
-            </View> */}
+            </View>
 
             <View style={styles.titleContainer}>
               <Text style={styles.title}>Indication</Text>
@@ -64,11 +84,33 @@ const Revision = () => {
             <View style={styles.containerPanneaux}>
                 {panneauxIndication.map(item => (
                     <View style={styles.singlePanneauxContainer} key={item.id}>
-                        <View style={styles.singleContainer}><Image source={item.image} style={styles.panneauxImage}/></View>
+                        <View style={styles.singleContainer}>
+                          {/* <Image source={item.image} style={styles.panneauxImage}/> */}
+                          <PanneauxIndication id={item.id}/>
+                        </View>
                         <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
                     </View>
                 ))}
             </View>
+            
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>Services</Text>
+            </View> 
+            <View style={styles.containerPanneaux}>
+                {panneauxServices.map(item => (
+                    <View style={styles.singlePanneauxContainer} key={item.id}>
+                        <View style={styles.singleContainer}>
+                          {/* <Image source={item.image} style={styles.panneauxImage}/> */}
+                          {/* <PanneauxIndication id={item.id}/> */}
+                          <PanneauxServices id={item.id}/>
+                        </View>
+                        <View style={styles.singleContainer}><Text style={styles.text}>{item.description}</Text></View>
+                    </View>
+                ))}
+            </View>
+
+
+
         </View>
     </ScrollView>
   );

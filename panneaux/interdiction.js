@@ -71,7 +71,6 @@ import img56 from '../assets/panneaux/interdiction/B34a.png';
 import img57 from '../assets/panneaux/interdiction/B35.png';
 import img58 from '../assets/panneaux/interdiction/B39.png';
 
-
 const interdiction = [
     {
         id: 1,
