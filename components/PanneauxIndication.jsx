@@ -67,63 +67,63 @@ import Logo51 from '../assets/panneaux-svg/5_indication/C208.svg';
 
 import img15 from '../assets/panneaux/indication/C18.png';
 
-const PanneauxIndication = ({ id }) => (
+const PanneauxIndication = ({ id, width = 120, height = 55 }) => (
     <View>
         {
-            id === 1 ? <Logo1 width={120} height={55}/> :
-            id === 2 ? <Logo2 width={120} height={55}/> :
-            id === 3 ? <Logo3 width={120} height={55}/> :
-            id === 4 ? <Logo4 width={120} height={55}/> :
-            id === 5 ? <Logo5 width={120} height={55}/> :
-            id === 6 ? <Logo6 width={120} height={55}/> :
-            id === 7 ? <Logo7 width={120} height={55}/> :
-            id === 8 ? <Logo8 width={120} height={55}/> :
-            id === 9 ? <Logo9 width={120} height={55}/> :
-            id === 10 ? <Logo10 width={120} height={55}/> :
-            id === 11 ? <Logo11 width={120} height={55}/> :
-            id === 12 ? <Logo12 width={120} height={55}/> :
-            id === 13 ? <Logo13 width={120} height={55}/> :
-            id === 14 ? <Logo14 width={120} height={55}/> :
-            // id === 15 ? <Logo15 width={120} height={120}/> : //c18
+            id === 1 ? <Logo1 width={width} height={height}/> :
+            id === 2 ? <Logo2 width={width} height={height}/> :
+            id === 3 ? <Logo3 width={width} height={height}/> :
+            id === 4 ? <Logo4 width={width} height={height}/> :
+            id === 5 ? <Logo5 width={width} height={height}/> :
+            id === 6 ? <Logo6 width={width} height={height}/> :
+            id === 7 ? <Logo7 width={width} height={height}/> :
+            id === 8 ? <Logo8 width={width} height={height}/> :
+            id === 9 ? <Logo9 width={width} height={height}/> :
+            id === 10 ? <Logo10 width={width} height={height}/> :
+            id === 11 ? <Logo11 width={width} height={height}/> :
+            id === 12 ? <Logo12 width={width} height={height}/> :
+            id === 13 ? <Logo13 width={width} height={height}/> :
+            id === 14 ? <Logo14 width={width} height={height}/> :
+            // id === 15 ? <Logo15 width={width} height={height}/> : //c18
             id === 15 ? <Image source={require('../assets/panneaux/indication/C18.png')} style={styles.panneauxImage}/>  : //c18
-            id === 16 ? <Logo16 width={120} height={55}/> :
-            id === 17 ? <Logo17 width={120} height={55}/> :
-            id === 18 ? <Logo18 width={120} height={55}/> :
-            id === 19 ? <Logo19 width={120} height={55}/> :
-            id === 20 ? <Logo20 width={120} height={55}/> :
-            id === 21 ? <Logo21 width={120} height={55}/> :
-            id === 22 ? <Logo22 width={120} height={55}/> :
-            id === 23 ? <Logo23 width={120} height={55}/> :
-            id === 24 ? <Logo24 width={120} height={55}/> :
-            id === 25 ? <Logo25 width={120} height={55}/> :
-            id === 26 ? <Logo26 width={120} height={55}/> :
-            id === 27 ? <Logo27 width={120} height={55}/> :
-            id === 28 ? <Logo28 width={120} height={55}/> :
-            // id === 29 ? <Logo29 width={120} height={55}/> : // ralentisseur
+            id === 16 ? <Logo16 width={width} height={height}/> :
+            id === 17 ? <Logo17 width={width} height={height}/> :
+            id === 18 ? <Logo18 width={width} height={height}/> :
+            id === 19 ? <Logo19 width={width} height={height}/> :
+            id === 20 ? <Logo20 width={width} height={height}/> :
+            id === 21 ? <Logo21 width={width} height={height}/> :
+            id === 22 ? <Logo22 width={width} height={height}/> :
+            id === 23 ? <Logo23 width={width} height={height}/> :
+            id === 24 ? <Logo24 width={width} height={height}/> :
+            id === 25 ? <Logo25 width={width} height={height}/> :
+            id === 26 ? <Logo26 width={width} height={height}/> :
+            id === 27 ? <Logo27 width={width} height={height}/> :
+            id === 28 ? <Logo28 width={width} height={height}/> :
+            // id === 29 ? <Logo29 width={width} height={height}/> : // ralentisseur
             id === 29 ?  <Image source={require('../assets/panneaux/indication/C27.png')} style={styles.panneauxImage}/> : // ralentisseur
-            id === 30 ? <Logo30 width={120} height={55}/> :
-            id === 31 ? <Logo31 width={120} height={55}/> :
-            id === 32 ? <Logo32 width={120} height={55}/> :
-            id === 33 ? <Logo33 width={120} height={55}/> :
-            id === 34 ? <Logo34 width={120} height={55}/> :
-            id === 35 ? <Logo35 width={120} height={55}/> :
-            id === 36 ? <Logo36 width={120} height={55}/> :
-            id === 37 ? <Logo37 width={120} height={55}/> :
-            id === 38 ? <Logo38 width={120} height={55}/> :
-            id === 39 ? <Logo39 width={120} height={55}/> :
-            id === 40 ? <Logo40 width={120} height={55}/> :
-            id === 41 ? <Logo41 width={120} height={55}/> :
-            // id === 42 ? <Logo42 width={120} height={55}/> : // route acc regl
+            id === 30 ? <Logo30 width={width} height={height}/> :
+            id === 31 ? <Logo31 width={width} height={height}/> :
+            id === 32 ? <Logo32 width={width} height={height}/> :
+            id === 33 ? <Logo33 width={width} height={height}/> :
+            id === 34 ? <Logo34 width={width} height={height}/> :
+            id === 35 ? <Logo35 width={width} height={height}/> :
+            id === 36 ? <Logo36 width={width} height={height}/> :
+            id === 37 ? <Logo37 width={width} height={height}/> :
+            id === 38 ? <Logo38 width={width} height={height}/> :
+            id === 39 ? <Logo39 width={width} height={height}/> :
+            id === 40 ? <Logo40 width={width} height={height}/> :
+            id === 41 ? <Logo41 width={width} height={height}/> :
+            // id === 42 ? <Logo42 width={width} height={height}/> : // route acc regl
             id === 42 ? <Image source={require('../assets/panneaux/indication/C107.png')} style={styles.panneauxImage}/> : // route acc regl
-            id === 43 ? <Logo43 width={120} height={55}/> :
-            id === 44 ? <Logo44 width={120} height={55}/> :
-            id === 45 ? <Logo45 width={120} height={55}/> :
-            id === 46 ? <Logo46 width={120} height={55}/> :
-            id === 47 ? <Logo47 width={120} height={55}/> :
-            id === 48 ? <Logo48 width={120} height={55}/> :
-            id === 49 ? <Logo49 width={120} height={55}/> :
-            id === 50 ? <Logo50 width={120} height={55}/> :
-            id === 51 ? <Logo51 width={120} height={55}/> : <Text>Rien</Text>
+            id === 43 ? <Logo43 width={width} height={height}/> :
+            id === 44 ? <Logo44 width={width} height={height}/> :
+            id === 45 ? <Logo45 width={width} height={height}/> :
+            id === 46 ? <Logo46 width={width} height={height}/> :
+            id === 47 ? <Logo47 width={width} height={height}/> :
+            id === 48 ? <Logo48 width={width} height={height}/> :
+            id === 49 ? <Logo49 width={width} height={height}/> :
+            id === 50 ? <Logo50 width={width} height={height}/> :
+            id === 51 ? <Logo51 width={width} height={height}/> : <Text>Rien</Text>
         }
     </View>
 );

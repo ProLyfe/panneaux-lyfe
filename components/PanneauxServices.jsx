@@ -48,46 +48,46 @@ import Logo36 from '../assets/panneaux-svg/6_services/CE30b.svg';
 
 import Logo37 from '../assets/panneaux-svg/6_services/CE50.svg';
 
-const PanneauxServices = ({ id }) => (
+const PanneauxServices = ({ id, width = 120, height = 55 }) => (
     <View>
         {
-            id === 1 ? <Logo1 width={120} height={55}/> :
-            id === 2 ? <Logo2 width={120} height={55}/> :
-            id === 3 ? <Logo3 width={120} height={55}/> :
-            id === 4 ? <Logo4 width={120} height={55}/> :
-            id === 5 ? <Logo5 width={120} height={55}/> :
-            id === 6 ? <Logo6 width={120} height={55}/> :
-            id === 7 ? <Logo7 width={120} height={55}/> :
-            id === 8 ? <Logo8 width={120} height={55}/> :
-            id === 9 ? <Logo9 width={120} height={55}/> :
-            id === 10 ? <Logo10 width={120} height={55}/> :
-            id === 11 ? <Logo11 width={120} height={55}/> :
-            id === 12 ? <Logo12 width={120} height={55}/> :
-            id === 13 ? <Logo13 width={120} height={55}/> :
-            id === 14 ? <Logo14 width={120} height={55}/> :
-            id === 15 ? <Logo15 width={120} height={55}/> :
-            id === 16 ? <Logo16 width={120} height={55}/> :
-            id === 17 ? <Logo17 width={120} height={55}/> :
-            id === 18 ? <Logo18 width={120} height={55}/> :
-            id === 19 ? <Logo19 width={120} height={55}/> :
-            id === 20 ? <Logo20 width={120} height={55}/> :
-            id === 21 ? <Logo21 width={120} height={55}/> :
-            id === 22 ? <Logo22 width={120} height={55}/> :
-            id === 23 ? <Logo23 width={120} height={55}/> :
-            id === 24 ? <Logo24 width={120} height={55}/> :
-            id === 25 ? <Logo25 width={120} height={55}/> :
-            id === 26 ? <Logo26 width={120} height={55}/> :
-            id === 27 ? <Logo27 width={120} height={55}/> :
-            id === 28 ? <Logo28 width={120} height={55}/> :
-            id === 29 ? <Logo29 width={120} height={55}/> :
-            id === 30 ? <Logo30 width={120} height={55}/> :
-            id === 31 ? <Logo31 width={120} height={55}/> :
-            id === 32 ? <Logo32 width={120} height={55}/> :
-            id === 33 ? <Logo33 width={120} height={55}/> :
-            id === 34 ? <Logo34 width={120} height={55}/> :
-            id === 35 ? <Logo35 width={120} height={55}/> :
-            id === 36 ? <Logo36 width={120} height={55}/> :
-            id === 37 ? <Logo37 width={120} height={55}/> : <Text>Rien</Text>
+            id === 1 ? <Logo1 width={width} height={height}/> :
+            id === 2 ? <Logo2 width={width} height={height}/> :
+            id === 3 ? <Logo3 width={width} height={height}/> :
+            id === 4 ? <Logo4 width={width} height={height}/> :
+            id === 5 ? <Logo5 width={width} height={height}/> :
+            id === 6 ? <Logo6 width={width} height={height}/> :
+            id === 7 ? <Logo7 width={width} height={height}/> :
+            id === 8 ? <Logo8 width={width} height={height}/> :
+            id === 9 ? <Logo9 width={width} height={height}/> :
+            id === 10 ? <Logo10 width={width} height={height}/> :
+            id === 11 ? <Logo11 width={width} height={height}/> :
+            id === 12 ? <Logo12 width={width} height={height}/> :
+            id === 13 ? <Logo13 width={width} height={height}/> :
+            id === 14 ? <Logo14 width={width} height={height}/> :
+            id === 15 ? <Logo15 width={width} height={height}/> :
+            id === 16 ? <Logo16 width={width} height={height}/> :
+            id === 17 ? <Logo17 width={width} height={height}/> :
+            id === 18 ? <Logo18 width={width} height={height}/> :
+            id === 19 ? <Logo19 width={width} height={height}/> :
+            id === 20 ? <Logo20 width={width} height={height}/> :
+            id === 21 ? <Logo21 width={width} height={height}/> :
+            id === 22 ? <Logo22 width={width} height={height}/> :
+            id === 23 ? <Logo23 width={width} height={height}/> :
+            id === 24 ? <Logo24 width={width} height={height}/> :
+            id === 25 ? <Logo25 width={width} height={height}/> :
+            id === 26 ? <Logo26 width={width} height={height}/> :
+            id === 27 ? <Logo27 width={width} height={height}/> :
+            id === 28 ? <Logo28 width={width} height={height}/> :
+            id === 29 ? <Logo29 width={width} height={height}/> :
+            id === 30 ? <Logo30 width={width} height={height}/> :
+            id === 31 ? <Logo31 width={width} height={height}/> :
+            id === 32 ? <Logo32 width={width} height={height}/> :
+            id === 33 ? <Logo33 width={width} height={height}/> :
+            id === 34 ? <Logo34 width={width} height={height}/> :
+            id === 35 ? <Logo35 width={width} height={height}/> :
+            id === 36 ? <Logo36 width={width} height={height}/> :
+            id === 37 ? <Logo37 width={width} height={height}/> : <Text>Rien</Text>
         }
     </View>
 );
