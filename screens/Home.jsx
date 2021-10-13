@@ -47,8 +47,8 @@ const Home = () => {
       <ScrollView>
         <View style={styles.categorieContainer}>
             {quizzCategorie.map(({ title, panneauxSelection }, index) => (
-              <View style={styles.singlePanneaux}>
-                <SelectionCard panneauxNb={panneauxSelection.length} panneauxId={panneauxSelection} title={title} key={index}/>
+              <View style={styles.singlePanneaux} key={`${index}-${title}`}>
+                <SelectionCard panneauxNb={panneauxSelection.length} panneauxId={panneauxSelection} title={title}/>
               </View>
             ))}
         </View>
