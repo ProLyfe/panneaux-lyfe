@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    marginTop: 50
+    marginTop: 40
   },
   singlePanneaux: {
     flexBasis: '50%',

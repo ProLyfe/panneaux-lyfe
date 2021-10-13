@@ -108,9 +108,6 @@ const Revision = () => {
                     </View>
                 ))}
             </View>
-
-
-
         </View>
     </ScrollView>
   );
@@ -146,12 +143,13 @@ const styles = StyleSheet.create({
   },
   containerPanneaux: {
     borderColor: 'white',
-    borderWidth: 4,
-    borderRadius: 12,
+    borderWidth: 5,
+    borderRadius: 40,
+    overflow: 'hidden'
   },
   singleContainer: {
     borderColor: 'white',
-    borderWidth: 1,
+    borderWidth: 2,
     height: 80,
     width: '50%',
     display: 'flex',
