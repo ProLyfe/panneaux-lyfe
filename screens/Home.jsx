@@ -1,8 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
 import SelectionCard from '../components/SelectionCard';
+import Stacks from '../navigation/quizzTabs';
 
-const Home = () => {
+const Home = ({ navigation }) => {
 // Documentation : <SelectionCard panneauxNb={1} id={35}/>
   const quizzCategorie = [
     {
@@ -48,7 +49,9 @@ const Home = () => {
         <View style={styles.categorieContainer}>
             {quizzCategorie.map(({ title, panneauxSelection }, index) => (
               <View style={styles.singlePanneaux} key={`${index}-${title}`}>
-                <SelectionCard panneauxNb={panneauxSelection.length} panneauxId={panneauxSelection} title={title}/>
+                <TouchableOpacity onPress={() => navigation.navigate('ModalQuizz')}>
+                  <SelectionCard panneauxNb={panneauxSelection.length} panneauxId={panneauxSelection} title={title}/>
+                </TouchableOpacity>
               </View>
             ))}
         </View>
