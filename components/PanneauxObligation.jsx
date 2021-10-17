@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import Logo1 from '../assets/panneaux-svg/4_obligation/B21-1.svg';
 import Logo2 from '../assets/panneaux-svg/4_obligation/B21-2.svg';
@@ -34,7 +34,7 @@ import Logo24 from '../assets/panneaux-svg/4_obligation/B45a.svg';
 import Logo25 from '../assets/panneaux-svg/4_obligation/B49.svg';
 
 const PanneauxObligation = ({ id, width = 120, height = 55 }) => (
-    <View>
+    <View style={styles.container}>
         {
             id === 1 ? <Logo1 width={width} height={height}/> :
             id === 2 ? <Logo2 width={width} height={height}/> :
@@ -64,5 +64,19 @@ const PanneauxObligation = ({ id, width = 120, height = 55 }) => (
         }
     </View>
 );
+
+const styles = StyleSheet.create({    
+    container: {
+       display: 'flex',
+       justifyContent: 'center',
+       alignItems: 'center',
+       aspectRatio: 1/1
+    },
+    panneauxImage: {
+      height: 55,
+      width: 55,
+      resizeMode:'contain',
+    },
+  });
 
 export default PanneauxObligation;

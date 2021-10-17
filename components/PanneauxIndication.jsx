@@ -68,7 +68,7 @@ import Logo51 from '../assets/panneaux-svg/5_indication/C208.svg';
 import img15 from '../assets/panneaux/indication/C18.png';
 
 const PanneauxIndication = ({ id, width = 120, height = 55 }) => (
-    <View>
+    <View style={styles.container}>
         {
             id === 1 ? <Logo1 width={width} height={height}/> :
             id === 2 ? <Logo2 width={width} height={height}/> :
@@ -128,11 +128,18 @@ const PanneauxIndication = ({ id, width = 120, height = 55 }) => (
     </View>
 );
 
-const styles = StyleSheet.create({    
+const styles = StyleSheet.create({ 
+    container: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      aspectRatio: 1/1
+  },   
     panneauxImage: {
       height: 55,
       width: 55,
       resizeMode:'contain',
     },
   });
+
 export default PanneauxIndication;

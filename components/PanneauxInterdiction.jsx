@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import Logo1 from '../assets/panneaux-svg/3_interdiction/B0.svg';
 import Logo2 from '../assets/panneaux-svg/3_interdiction/B1.svg';
@@ -75,7 +75,7 @@ import Logo57 from '../assets/panneaux-svg/3_interdiction/B35.svg';
 import Logo58 from '../assets/panneaux-svg/3_interdiction/B39.svg';
 
 const PanneauxInterdiction = ({ id, width = 120, height = 55 }) => (
-    <View>
+    <View style={styles.container}>
         {
             id === 1 ? <Logo1 width={width} height={height}/> :
             id === 2 ? <Logo2 width={width} height={height}/> :
@@ -138,5 +138,19 @@ const PanneauxInterdiction = ({ id, width = 120, height = 55 }) => (
         }
     </View>
 );
+
+const styles = StyleSheet.create({    
+    container: {
+       display: 'flex',
+       justifyContent: 'center',
+       alignItems: 'center',
+       aspectRatio: 1/1
+    },
+    panneauxImage: {
+      height: 55,
+      width: 55,
+      resizeMode:'contain',
+    },
+  });
 
 export default PanneauxInterdiction;

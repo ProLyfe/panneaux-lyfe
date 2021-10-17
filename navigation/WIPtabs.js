@@ -10,22 +10,35 @@ import ModalQuizz from '../screens/modals/ModalQuizz';
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => (
-    <Tab.Navigator screenOptions={{ tabBarStyle: {  backgroundColor: '#1C2753' }}}>
-        <Tab.Screen name="Home" component={Home} options={sharedStyled}/>
+    <Tab.Navigator 
+        screenOptions={{
+        tabBarStyle: {  backgroundColor: '#1C2753' }
+    }}>
+        <Tab.Screen name="HomeStackScreen" component={HomeStackScreen} options={sharedStyled} options={{headerShown: false}}/>
         <Tab.Screen name="CustomQuizz" component={CustomQuizz} options={sharedStyled} />
         <Tab.Screen name="Révision" component={Revision} options={sharedStyled}/>
         <Tab.Screen name="Params" component={Params} options={sharedStyled} />
     </Tab.Navigator>
 );
 
-const HomeTabsStack = createNativeStackNavigator();
 
-const HomeTabsStackScreen = () => (
-    <HomeTabsStack.Navigator>
-        <HomeTabsStack.Screen name="HomeTabs" component={Tabs} options={sharedStyled} options={{headerShown: false}}/>
-        <HomeTabsStack.Screen name="ModalQuizz" component={ModalQuizz} options={sharedStyled} options={{headerShown: false}}/>
-    </HomeTabsStack.Navigator>
+const HomeStack = createNativeStackNavigator();
+
+const HomeStackScreen = () => (
+    <HomeStack.Navigator
+    // screenOptions={{
+    //     headerShown: false
+    // }}
+    >
+        {/* <HomeStack.Group screenOptions={{ presentation: 'modal' }}> */}
+            <HomeStack.Screen name="Home" component={Home} options={sharedStyled} />
+            <HomeStack.Screen name="ModalQuizz" component={ModalQuizz} options={sharedStyled} />
+        {/* </HomeStack.Group> */}
+    </HomeStack.Navigator>
 );
+
+
+
 
 const sharedStyled = {
     headerStyle: {
@@ -37,6 +50,6 @@ const sharedStyled = {
       },
 }
 
-export default HomeTabsStackScreen;
+export default Tabs;
 
 

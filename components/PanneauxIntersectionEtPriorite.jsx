@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import Logo1 from '../assets/panneaux-svg/2_intersection-priorite/AB1.svg';
 import Logo2 from '../assets/panneaux-svg/2_intersection-priorite/AB2.svg';
@@ -14,7 +14,7 @@ import Logo8 from '../assets/panneaux-svg/2_intersection-priorite/AB7.svg';
 import Logo9 from '../assets/panneaux-svg/2_intersection-priorite/AB25.svg';
 
 const PanneauxIntersectionEtPriorite = ({ id, width = 120, height = 55 }) => (
-    <View>
+    <View style={styles.container}>
         {
             id === 1 ? <Logo1 width={width} height={height}/> :
             id === 2 ? <Logo2 width={width} height={height}/> :
@@ -28,5 +28,19 @@ const PanneauxIntersectionEtPriorite = ({ id, width = 120, height = 55 }) => (
         }
     </View>
 );
+
+const styles = StyleSheet.create({    
+    container: {
+       display: 'flex',
+       justifyContent: 'center',
+       alignItems: 'center',
+       aspectRatio: 1/1
+    },
+    panneauxImage: {
+      height: 55,
+      width: 55,
+      resizeMode:'contain',
+    },
+  });
 
 export default PanneauxIntersectionEtPriorite;
