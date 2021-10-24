@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
 import SelectionCard from '../components/SelectionCard';
+import useRandom from '../hooks/useRandom';
 import Stacks from '../navigation/quizzTabs';
 import allPanneaux from '../panneaux/allPanneaux';
 import panneauxDanger from '../panneaux/danger';
@@ -64,7 +65,7 @@ const Home = ({ navigation }) => {
         <View style={styles.categorieContainer}>
             {quizzCategorie.map(({ title, panneauxSelection, panneaux, key }, index) => (
               <View style={styles.singlePanneaux} key={`${index}-${title}`}>
-                <TouchableOpacity onPress={() => navigation.navigate('ModalQuizz', {title: title, panneaux: panneaux, key: key })}>
+                <TouchableOpacity onPress={() => navigation.navigate('ModalQuizz', {title: title, panneaux: useRandom(panneaux), key: key})}>
                   <SelectionCard panneauxNb={panneauxSelection.length} panneauxId={panneauxSelection} title={title}/>
                 </TouchableOpacity>
               </View>
