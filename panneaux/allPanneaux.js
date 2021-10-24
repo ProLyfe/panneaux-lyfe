@@ -972,7 +972,7 @@ const allPanneaux = [
     {
         id: 136,
         image: img136,
-        description: "Intersections où vous êtes prioritaire",
+        description: "Intersection où vous êtes prioritaire",
     },
     {
         id: 137,
