@@ -6,7 +6,6 @@ const RecapScreen = ({ errorsNb, score, randomizedArray, navigation }) => (
       <View style={styles.questionTextContainer}>
         <Text style={styles.recapText}>Récap</Text>
       </View>
-
       <View style={styles.panneauxContainer}>
         <Text style={{...styles.text}}>Questions : <Text style={styles.textNb}>{randomizedArray.length - 1}</Text></Text>
         <Text style={{...styles.text, color: 'red'}}>Erreurs : <Text style={styles.textNb}>{errorsNb}</Text></Text>

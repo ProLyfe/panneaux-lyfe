@@ -14,17 +14,15 @@ const ModalQuizz = ({ navigation, route }) => {
   const [disabledButtonColor, setDisabledButtonColor] = useState('#1C2753');
 
   const keyId = route.params.key;
-  // const randomizedArray = route.params.panneaux;
-  const randomizedArray = [...route.params.panneaux, {id: 'yaey'}]
+  const randomizedArray = [...route.params.panneaux, {id: 'finish'}];
   
-  // const questions = useRandom(randomizedArray[questionNb].questions);
   const questions = randomizedArray[questionNb].questions;
 
   const verifyAnswer = (answer) => {
     if (answer === true) {
       setBgColor('green');
       setDisabledButton(true);
-      setDisabledButtonColor('#121213')
+      setDisabledButtonColor('#121213');
       setScore(prevScore => prevScore + 1);
         setTimeout(() => {
           setQuestionNb(prevState => prevState + 1);
@@ -38,10 +36,9 @@ const ModalQuizz = ({ navigation, route }) => {
       setDisabledButtonColor('#121213');
       setErrorsNb(prevError => prevError + 1);
         setTimeout(() => {
-        // setQuestionNb(prevState => prevState + 1);
         setBgColor('#04103A');
         setDisabledButton(false);
-        setDisabledButtonColor('#1C2753')
+        setDisabledButtonColor('#1C2753');
         }, 1000);
     };
   };
@@ -49,7 +46,8 @@ const ModalQuizz = ({ navigation, route }) => {
   return (
     <View style={{...styles.container, backgroundColor: bgColor}}>
 
-      { randomizedArray[questionNb].id !== 'yaey' ? <GameScreen 
+      { randomizedArray[questionNb].id !== 'finish' ? 
+      <GameScreen 
         navigation={navigation} 
         score={score} 
         questionNb={questionNb} 
@@ -59,7 +57,14 @@ const ModalQuizz = ({ navigation, route }) => {
         disabledButton={disabledButton}
         disabledButtonColor={disabledButtonColor}
         verifyAnswer={verifyAnswer}
-      /> : <RecapScreen errorsNb={errorsNb} score={score} randomizedArray={randomizedArray} questionNb={questionNb} navigation={navigation}/>}
+      /> : <RecapScreen 
+             errorsNb={errorsNb} 
+             score={score} 
+             randomizedArray={randomizedArray} 
+             questionNb={questionNb} 
+             navigation={navigation}
+            />
+      }
     </View>
   );
 };

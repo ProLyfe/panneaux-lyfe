@@ -38,11 +38,6 @@ const GameScreen = ({ navigation, score, questionNb, randomizedArray, keyId, que
 );
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'space-evenly',
-    },
     headerOptions: {
       width: '100%',
       display: 'flex',
@@ -62,10 +57,6 @@ const styles = StyleSheet.create({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-    },
-    text: {
-      color: 'white',
-      textAlign: 'center'
     },
     questionText: {
       color: 'white', 
