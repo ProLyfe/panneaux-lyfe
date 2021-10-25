@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import GameScreen from '../../components/GameScreen';
+import RecapScreen from '../../components/RecapScreen';
 
 const ModalQuizz = ({ navigation, route }) => {
 
   const [questionNb, setQuestionNb] = useState(0);
   const [score, setScore] = useState(0);
+  const [errorsNb, setErrorsNb] = useState(0);
+
   const [bgColor, setBgColor] = useState('#04103A');
   const [disabledButton, setDisabledButton] = useState(false);
   const [disabledButtonColor, setDisabledButtonColor] = useState('#1C2753');
@@ -32,7 +35,8 @@ const ModalQuizz = ({ navigation, route }) => {
     } else {
       setBgColor('red');
       setDisabledButton(true);
-      setDisabledButtonColor('#121213')
+      setDisabledButtonColor('#121213');
+      setErrorsNb(prevError => prevError + 1);
         setTimeout(() => {
         // setQuestionNb(prevState => prevState + 1);
         setBgColor('#04103A');
@@ -55,7 +59,7 @@ const ModalQuizz = ({ navigation, route }) => {
         disabledButton={disabledButton}
         disabledButtonColor={disabledButtonColor}
         verifyAnswer={verifyAnswer}
-      /> : <Text>Rien poto</Text>}
+      /> : <RecapScreen errorsNb={errorsNb} score={score} randomizedArray={randomizedArray} questionNb={questionNb} navigation={navigation}/>}
     </View>
   );
 };
