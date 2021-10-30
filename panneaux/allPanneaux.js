@@ -968,46 +968,244 @@ const allPanneaux = [
         id: 135,
         image: img135,
         description: "Cédez le passage aux véhicules arrivant à votre droite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Cédez le passage aux véhicules arrivant à votre droite',
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: 'Intersection où vous êtes prioritaire',
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Cédez le passage à l'intersection à 150m",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: 'Danger pouvant être précisé ou non par un panonceau',
+                status: false
+            },
+        ],
     },
     {
         id: 136,
         image: img136,
         description: "Intersection où vous êtes prioritaire",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Cédez le passage aux véhicules arrivant à votre droite',
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: 'Intersections où vous êtes prioritaire',
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Sens interdit",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: 'Danger pouvant être précisé ou non par un panonceau',
+                status: false
+            },
+        ],
     },
     {
         id: 137,
         image: img137,
         description: "Cédez le passage à l'intersection",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Cédez le passage aux véhicules arrivant à votre droite',
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Cédez le passage à l'intersection",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Sens interdit",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: 'Danger pouvant être précisé ou non par un panonceau',
+                status: false
+            },
+        ],
     },
     {
         id: 138,
         image: img138,
         description: "Cédez le passage à l'intersection à 150m",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Route prioritaire',
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Parking dans 150m ",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Danger dans 150m",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Cédez le passage à l'intersection à 150m",
+                status: true
+            },
+        ],
     },
     {
         id: 139,
         image: img139,
         description: "Arrêt à l'intersection",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Route prioritaire',
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Arrêt à l'intersection",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Sens interdit",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: 'Circulation interdite dans les deux sens',
+                status: false
+            },
+        ],
     },
     {
         id: 140,
         image: img140,
         description: "Arrêt à l'intersection à 150m",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Route prioritaire',
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Sens interdit",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Arrêt à l'intersection à 150m",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: 'Fin de route prioritaire',
+                status: false
+            },
+        ],
     },
     {
         id: 141,
         image: img141,
         description: "Route prioritaire",
+        questions: [
+            {
+                questionId: 1,
+                proposition: 'Route prioritaire',
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Intersection où vous êtes prioritaire",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Sens interdit",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: 'Fin de route prioritaire',
+                status: false
+            },
+        ],
     },
     {
         id: 142,
         image: img142,
         description: "Fin de route prioritaire",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Arrêt à l'intersection",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Sens interdit",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Fin de route prioritaire",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: 'Route prioritaire',
+                status: false
+            },
+        ],
     },
     {
         id: 143,
         image: img143,
         description: "Carrefour à sens giratoire avec priorité aux usagers circulant sur l'anneau",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Arrêt à l'intersection",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Carrefour à sens giratoire avec priorité aux usagers circulant sur l'anneau",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Cédez le passage aux véhicules arrivant à votre droite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: 'Route prioritaire',
+                status: false
+            },
+        ],
     },
     //FIN PANNEAUX INTERSECTION PRIORITE
     //DEBUT PANNEAUX DANGER

@@ -105,8 +105,8 @@ const panneauxIntersectionEtPriorite = [
             },
             {
                 questionId: 2,
-                proposition: "Cédez le passage à l'intersection à 150m",
-                status: true
+                proposition: "Parking dans 150m ",
+                status: false
             },
             {
                 questionId: 3,
@@ -115,8 +115,8 @@ const panneauxIntersectionEtPriorite = [
             },
             {
                 questionId: 4,
-                proposition: 'Parking dans 150m',
-                status: false
+                proposition: "Cédez le passage à l'intersection à 150m",
+                status: true
             },
         ],
     },
@@ -159,13 +159,13 @@ const panneauxIntersectionEtPriorite = [
             },
             {
                 questionId: 2,
-                proposition: "Arrêt à l'intersection à 150m",
-                status: true
+                proposition: "Sens interdit",
+                status: false
             },
             {
                 questionId: 3,
-                proposition: "Sens interdit",
-                status: false
+                proposition: "Arrêt à l'intersection à 150m",
+                status: true
             },
             {
                 questionId: 4,
@@ -181,13 +181,13 @@ const panneauxIntersectionEtPriorite = [
         questions: [
             {
                 questionId: 1,
-                proposition: 'Intersection où vous êtes prioritaire',
-                status: false
+                proposition: 'Route prioritaire',
+                status: true
             },
             {
                 questionId: 2,
-                proposition: "Route prioritaire",
-                status: true
+                proposition: "Intersection où vous êtes prioritaire",
+                status: false
             },
             {
                 questionId: 3,
@@ -213,13 +213,13 @@ const panneauxIntersectionEtPriorite = [
             },
             {
                 questionId: 2,
-                proposition: "Fin de route prioritaire",
-                status: true
+                proposition: "Sens interdit",
+                status: false
             },
             {
                 questionId: 3,
-                proposition: "Sens interdit",
-                status: false
+                proposition: "Fin de route prioritaire",
+                status: true
             },
             {
                 questionId: 4,
