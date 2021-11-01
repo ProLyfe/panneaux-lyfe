@@ -1860,126 +1860,676 @@ const allPanneaux = [
         id: 59,
         image: img59,
         description: "Obligation de tourner à droite avant le panneau",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Interdiction de tourner à droite à la prochaine intersection",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à droite",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Direction obligatoire à la prochaine intersection : à droite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Obligation de tourner à droite avant le panneau",
+                status: true
+            },
+        ],
     },
     {
         id: 60,
         image: img60,
         description: "Obligation de tourner à gauche avant le panneau",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Obligation de tourner à gauche avant le panneau",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : à gauche",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Obligation de tourner à droite avant le panneau",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Interdiction de tourner à gauche à la prochaine intersection",
+                status: false
+            },
+        ],
     },
     {
         id: 61,
         image: img61,
         description: "Contournement obligatoire de l'obstacle par la droite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Contournement obligatoire de l'obstacle par la gauche",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Contournement obligatoire de l'obstacle par la droite",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Obligation de tourner à droite avant le panneau",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Interdiction de tourner à droite à la prochaine intersection",
+                status: false
+            },
+        ],
     },
     {
         id: 62,
         image: img62,
         description: "Contournement obligatoire de l'obstacle par la gauche",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Contournement obligatoire de l'obstacle par la droite",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Contournement obligatoire de l'obstacle par la gauche",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Fin de l'obligation de l'usage des chaînes à neige",
+                status: false
+            },
+        ],
     },
     {
         id: 63,
         image: img63,
         description: "Direction obligatoire à la prochaine intersection : tout droit",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Direction obligatoire à la prochaine intersection : tout gauche",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Vitesse minimale obligatoire",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Chemin obligatoire pour piétons",
+                status: false
+            },
+        ],
     },
     {
         id: 64,
         image: img64,
         description: "Direction obligatoire à la prochaine intersection : à droite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Voie reservée aux tramways",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : à gauche",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Direction obligatoire à la prochaine intersection : à gauche ou à droite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Direction obligatoire à la prochaine intersection : à droite",
+                status: true
+            },
+        ],
     },
     {
         id: 65,
         image: img65,
         description: "Direction obligatoire à la prochaine intersection : à gauche",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Direction obligatoire à la prochaine intersection : à gauche",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Piste ou bande obligatoire aux cycles sans side-car à 2 ou 3 roues",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Voie reservée aux tramways",
+                status: false
+            },
+        ],
     },
     {
         id: 66,
         image: img66,
         description: "Direction obligatoire à la prochaine intersection : tout droit ou à droite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à droite",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Interdiction de faire demi-tour",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Vitesse minimale obligatoire",
+                status: false
+            },
+        ],
     },
     {
         id: 67,
         image: img67,
         description: "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à droite",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Piste ou bande obligatoire aux cycles sans side-car à 2 ou 3 roues",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Direction obligatoire à la prochaine intersection : à gauche ou à droite",
+                status: false
+            },
+        ],
     },
     {
         id: 68,
         image: img68,
         description: "Direction obligatoire à la prochaine intersection : à gauche ou à droite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Interdiction de tourner à droite à la prochaine intersection",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Piste ou bande obligatoire aux cycles sans side-car à 2 ou 3 roues",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Direction obligatoire à la prochaine intersection : à gauche ou à droite",
+                status: true
+            },
+        ],
     },
     {
         id: 69,
         image: img69,
         description: "Piste ou bande obligatoire aux cycles sans side-car à 2 ou 3 roues",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Piste ou bande obligatoire aux cycles sans side-car à 2 ou 3 roues",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Chemin obligatoire pour piétons",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Interdiction de dépasser pour les transports de marchandises > à 3.5t",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Interdiction de dépasser tout véhicule à moteur sauf deux roues",
+                status: false
+            },
+        ],
     },
     {
         id: 70,
         image: img70,
         description: "Chemin obligatoire pour piétons",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de chemin obligatoire pour piétons",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Accès interdit aux piétons",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Passage pour piétons",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Chemin obligatoire pour piétons",
+                status: true
+            },
+        ],
     },
     {
         id: 71,
         image: img71,
         description: "Chemin obligatoire pour cavaliers",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Voie reservée aux tramways",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Chemin obligatoire pour cavaliers",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Vitesse minimale obligatoire",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Passage de cavaliers",
+                status: false
+            },
+        ],
     },
     {
         id: 72,
         image: img72,
         description: "Vitesse minimale obligatoire",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Vitesse minimale obligatoire",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Limitation de vitesse à 50km/h",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Ralentisseur",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Fin de vitesse minimale obligatoire",
+                status: false
+            },
+        ],
     },
     {
         id: 73,
         image: img73,
         description: "Chaînes à neige obligatoire sur au moins 2 roues motrices",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Ralentisseur",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Obligation dont la nature est mentionnée sur le panneau",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Voie reservée aux véhicules des services réguliers de transport en commun",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Chaînes à neige obligatoire sur au moins 2 roues motrices",
+                status: true
+            },
+        ],
     },
     {
         id: 74,
         image: img74,
         description: "Voie reservée aux véhicules des services réguliers de transport en commun",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de piste ou de bande cyclable",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Direction obligatoire à la prochaine intersection : tout droit ou à droite",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Voie reservée aux véhicules des services réguliers de transport en commun",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Chaînes à neige obligatoire sur au moins 2 roues motrices",
+                status: false
+            },
+        ],
     },
     {
         id: 75,
         image: img75,
         description: "Voie reservée aux tramways",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Voie reservée aux tramways",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Traversée de voie de tramways",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Accès interdit aux cycles",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Accès interdit aux véhicules transportant des marchandises",
+                status: false
+            },
+        ],
     },
     {
         id: 76,
         image: img76,
         description: "Obligation dont la nature est mentionnée sur le panneau",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Poste de gonflage gratuit",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Traversée de voie de tramways",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Fin de chemin obligatoire pour piétons",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Obligation dont la nature est mentionnée sur le panneau",
+                status: true
+            },
+        ],
     },
     {
         id: 77,
         image: img77,
         description: "Fin de piste ou de bande cyclable",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de piste ou bande cyclable conseillée et réservée aux cycles à 2 ou 3 roues",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Fin de piste ou de bande cyclable",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Piste ou bande cyclable conseillée et réservée aux cycles à 2 ou 3 roues",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Fin de vitesse minimale obligatoire",
+                status: false
+            },
+        ],
     },
     {
         id: 78,
         image: img78,
         description: "Fin de chemin obligatoire pour piétons",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de chemin obligatoire pour piétons",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Fin de vitesse minimale obligatoire",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Fin de chemin obligatoire pour cavaliers",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Fin de piste ou de bande cyclable",
+                status: false
+            },
+        ],
     },
     {
         id: 79,
         image: img79,
         description: "Fin de chemin obligatoire pour cavaliers",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Fin de l'obligation de l'usage des chaînes à neige",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Fin de chemin obligatoire pour cavaliers",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Fin de vitesse minimale obligatoire",
+                status: false
+            },
+        ],
     },
     {
         id: 80,
         image: img80,
         description: "Fin de vitesse minimale obligatoire",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de vitesse minimale obligatoire",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Fin de l'obligation de l'usage des chaînes à neige",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Fin d'obligation d'allumage des feux",
+                status: false
+            },
+        ],
     },
     {
         id: 81,
         image: img81,
         description: "Fin de l'obligation de l'usage des chaînes à neige",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin de vitesse minimale obligatoire",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Fin d'obligation d'allumage des feux",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Fin de l'obligation de l'usage des chaînes à neige",
+                status: true
+            },
+        ],
     },
     {
         id: 82,
         image: img82,
         description: "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Contournement obligatoire de l'obstacle par la gauche",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Accès interdit aux véhicules de transport en commun",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Gare auto-train",
+                status: false
+            },
+        ],
     },
     {
         id: 83,
         image: img83,
         description: "Fin d'obligation d'allumage des feux",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fin d'obligation d'allumage des feux",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Installations ou services diver",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Poste de gonflage gratuit",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Point de détente",
+                status: false
+            },
+        ],
     },
     //FIN PANNEAUX OBLIGATION
     //DEBUT PANNEAUX INDICATION
