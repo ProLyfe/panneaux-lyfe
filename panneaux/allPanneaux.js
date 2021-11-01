@@ -2608,7 +2608,7 @@ const allPanneaux = [
     {
         id: 168,
         image: img168,
-        description: "Risque de chut de pierres",
+        description: "Risque de chute de pierres",
     },
     {
         id: 169,
