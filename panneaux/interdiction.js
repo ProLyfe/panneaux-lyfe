@@ -160,7 +160,7 @@ const interdiction = [
         questions: [
             {
                 questionId: 1,
-                proposition: "Interdiction de tourner à droite à la prochaine intersection",
+                proposition: "d",
                 status: true
             },
             {
