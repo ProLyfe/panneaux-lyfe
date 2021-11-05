@@ -4946,186 +4946,1000 @@ const allPanneaux = [
         id: 173,
         image: img173,
         description: "Poste de secours",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Poste de secours",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Moyen de lutte contre les incendies : extincteur",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Issue de secours vers la gauche",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Poste d'appel d'urgence",
+                status: false
+            },
+        ],
     },
     {
         id: 174,
         image: img174,
         description: "Poste d'appel d'urgence",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Poste de secours",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Poste d'appel d'urgence",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Poste d'appel d'urgence",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Terrain de camping pour tentes",
+                status: false
+            },
+        ],
     },
     {
         id: 175,
         image: img175,
         description: "Cabine téléphonique publique",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Cabine téléphonique publique",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Informations relatives aux services ou activités touristiques",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Chambre d'hôtes ou gîte",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+        ],
     },
     {
         id: 176,
         image: img176,
         description: "Informations relatives aux services ou activités touristiques",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Moyen de lutte contre les incendies : extincteur",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Gare auto-train",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Informations relatives aux services ou activités touristiques",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Terrain de camping pour caravanes et auto-caravanes",
+                status: false
+            },
+        ],
     },
     {
         id: 177,
         image: img177,
         description: "Terrain de camping pour tentes",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Terrain de camping pour tentes",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Point de départ d'itinéraire pédestre",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Emplacement pour pique-nique",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Poste de gonflage gratuit",
+                status: false
+            },
+        ],
     },
     {
         id: 178,
         image: img178,
         description: "Terrain de camping pour caravanes et auto-caravanes",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Atelier d'entretien de véhicules",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Terrain de camping pour caravanes et auto-caravanes",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Embarcadère",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Point de départ d'itinéraire pédestre",
+                status: false
+            },
+        ],
     },
     {
         id: 179,
         image: img179,
         description: "Terrain de camping pour tentes, caravanes et auto-caravanes",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Auberge de jeunesse",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Chambre d'hôtes ou gîte",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Terrain de camping pour tentes, caravanes et auto-caravanes",
+                status: true
+            },
+        ],
     },
     {
         id: 180,
         image: img180,
         description: "Auberge de jeunesse",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Issue de secours vers la droite",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Restauration ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Auberge de jeunesse",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Point de départ d'itinéraire pédestre",
+                status: false
+            },
+        ],
     },
     {
         id: 181,
         image: img181,
         description: "Chambre d'hôtes ou gîte",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Station de vidange pour caravanes, auto-caravanes et car",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Chambre d'hôtes ou gîte",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Auberge de jeunesse",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Gare auto-train",
+                status: false
+            },
+        ],
     },
     {
         id: 182,
         image: img182,
         description: "Point de départ d'itinéraire pédestre",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Fréquence radio dédiée aux informations de circulation routière",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Point de départ d'itinéraire pédestre",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Parking sous surveillance",
+                status: false
+            },
+        ],
     },
     {
         id: 183,
         image: img183,
         description: "Point de départ d'un circuit de ski de fond",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Poste de distribution de carburant",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Emplacement pour pique-nique",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Gare auto-train",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Point de départ d'un circuit de ski de fond",
+                status: true
+            },
+        ],
     },
     {
         id: 184,
         image: img184,
         description: "Emplacement pour pique-nique",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Poste de distribution de carburant",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Embarcadère",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Emplacement pour pique-nique",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Parking sous surveillance",
+                status: false
+            },
+        ],
     },
     {
         id: 185,
         image: img185,
         description: "Gare auto-train",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Gare auto-train",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Gare de téléphérique",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Poste de distribution de carburant",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Parking sous surveillance",
+                status: false
+            },
+        ],
     },
     {
         id: 186,
         image: img186,
         description: "Parking sous surveillance",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Parking sous surveillance",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Restauration ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Jeux d'enfants",
+                status: false
+            },
+        ],
     },
     {
         id: 187,
         image: img187,
         description: "Embarcadère",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Auberge de jeunesse",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Distributeur de billets de banque",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Embarcadère",
+                status: true
+            },
+        ],
     },
     {
         id: 188,
         image: img188,
         description: "Toilettes ouvertes au public",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Poste de distribution de carburant assurant le ravitaillement GPL",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Point de vue",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Terrain de camping pour tentes",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Toilettes ouvertes au public",
+                status: true
+            },
+        ],
     },
     {
         id: 189,
         image: img189,
         description: "Installations accessibles aux personnes à mobilité réduite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Installations accessibles aux personnes à mobilité réduite",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Poste de distribution de carburant",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Cafétéria ouvert 7j/7",
+                status: false
+            },
+        ],
     },
     {
         id: 190,
         image: img190,
         description: "Poste de distribution de carburant",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Atelier d'entretien de véhicules",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Jeux d'enfants",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Installations accessibles aux personnes à mobilité réduite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Poste de distribution de carburant",
+                status: true
+            },
+        ],
     },
     {
         id: 191,
         image: img191,
         description: "Poste de distribution de carburant assurant le ravitaillement GPL",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Gare de téléphérique",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Poste de distribution de carburant assurant le ravitaillement GPL",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Point de détente",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Poste d'appel d'urgence",
+                status: false
+            },
+        ],
     },
     {
         id: 192,
         image: img192,
         description: "Restauration ouvert 7j/7",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Emplacement de mise à l'eau d'embarcations légères",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Cafétéria ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Hôtel ou motel ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Restauration ouvert 7j/7",
+                status: true
+            },
+        ],
     },
     {
         id: 193,
         image: img193,
         description: "Hôtel ou motel ouvert 7j/7",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Hôtel ou motel ouvert 7j/7",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Restauration ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Cafétéria ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Gare de téléphérique",
+                status: false
+            },
+        ],
     },
     {
         id: 194,
         image: img194,
         description: "Cafétéria ouvert 7j/7",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Hôtel ou motel ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Issue de secours vers la droite",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Cafétéria ouvert 7j/7",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Restauration ouvert 7j/7",
+                status: false
+            },
+        ],
     },
     {
         id: 195,
         image: img195,
         description: "Emplacement de mise à l'eau d'embarcations légères",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Restauration ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Point de vue",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Emplacement de mise à l'eau d'embarcations légères",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Terrain de camping pour tentes, caravanes et auto-caravanes",
+                status: false
+            },
+        ],
     },
     {
         id: 196,
         image: img196,
         description: "Gare de téléphérique",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Station de vidange pour caravanes, auto-caravanes et car",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Point de départ d'un télésiège ou d'une télécabine",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Point de vue",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Gare de téléphérique",
+                status: true
+            },
+        ],
     },
     {
         id: 197,
         image: img197,
         description: "Point de départ d'un télésiège ou d'une télécabine",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Point de vue",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Jeux d'enfants",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Issue de secours vers la droite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Point de départ d'un télésiège ou d'une télécabine",
+                status: true
+            },
+        ],
     },
     {
         id: 198,
         image: img198,
         description: "Point de vue",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Point de vue",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Terrain de camping pour tentes",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Fréquence radio dédiée aux informations de circulation routière",
+                status: false
+            },
+        ],
     },
     {
         id: 199,
         image: img199,
         description: "Fréquence radio dédiée aux informations de circulation routière",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Fréquence radio dédiée aux informations de circulation routière",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Distributeur de billets de banque",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Atelier d'entretien de véhicules",
+                status: false
+            },
+        ],
     },
     {
         id: 200,
         image: img200,
         description: "Jeux d'enfants",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Terrain de camping pour tentes, caravanes et auto-caravanes",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Point de détente",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Jeux d'enfants",
+                status: true
+            },
+        ],
     },
     {
         id: 201,
         image: img201,
         description: "Station de vidange pour caravanes, auto-caravanes et car",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Issue de secours vers la gauche",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Point de détente",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Station de vidange pour caravanes, auto-caravanes et car",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Poste de gonflage gratuit",
+                status: false
+            },
+        ],
     },
     {
         id: 202,
         image: img202,
         description: "Distributeur de billets de banque",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Distributeur de billets de banque",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Issue de secours vers la gauche",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Chambre d'hôtes ou gîte",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+        ],
     },
     {
         id: 203,
         image: img203,
         description: "Poste de gonflage gratuit",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Poste de gonflage gratuit",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Atelier d'entretien de véhicules",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Point de détente",
+                status: false
+            },
+        ],
     },
     {
         id: 204,
         image: img204,
         description: "Point de détente",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Embarcadère",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Issue de secours vers la droite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Point de détente",
+                status: true
+            },
+        ],
     },
     {
         id: 205,
         image: img205,
         description: "Atelier d'entretien de véhicules",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Restauration ouvert 7j/7",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Atelier d'entretien de véhicules",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Issue de secours vers la gauche",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Jeux d'enfants",
+                status: false
+            },
+        ],
     },
     {
         id: 206,
         image: img206,
         description: "Moyen de lutte contre les incendies : extincteur",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Point de détente",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Moyen de lutte contre les incendies : extincteur",
+                status: true
+            },
+            {
+                questionId: 4,
+                proposition: "Issue de secours vers la droite",
+                status: false
+            },
+        ],
     },
     {
         id: 207,
         image: img207,
         description: "Issue de secours vers la droite",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Toilettes ouvertes au public",
+                status: false
+            },
+            {
+                questionId: 2,
+                proposition: "Issue de secours vers la droite",
+                status: true
+            },
+            {
+                questionId: 3,
+                proposition: "Issue de secours vers la gauche",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+        ],
     },
     {
         id: 208,
         image: img208,
         description: "Issue de secours vers la gauche",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Issue de secours vers la gauche",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Installations ou services divers",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Issue de secours vers la droite",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Emplacement pour pique-nique",
+                status: false
+            },
+        ],
     },
     {
         id: 209,
         image: img209,
         description: "Installations ou services divers",
+        questions: [
+            {
+                questionId: 1,
+                proposition: "Installations ou services divers",
+                status: true
+            },
+            {
+                questionId: 2,
+                proposition: "Emplacement pour pique-nique",
+                status: false
+            },
+            {
+                questionId: 3,
+                proposition: "Point de départ d'un circuit de ski de fond",
+                status: false
+            },
+            {
+                questionId: 4,
+                proposition: "Auberge de jeunesse",
+                status: false
+            },
+        ],
     },
 ];
 
