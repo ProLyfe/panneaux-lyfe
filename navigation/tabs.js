@@ -6,6 +6,7 @@ import Home from '../screens/Home';
 import Params from '../screens/Params';
 import Revision from '../screens/Revision';
 import ModalQuizz from '../screens/modals/ModalQuizz';
+import ModalCustomQuizz from '../screens/modals/ModalCustomQuizz';
 
 const Tab = createBottomTabNavigator();
 
@@ -24,6 +25,7 @@ const HomeTabsStackScreen = () => (
     <HomeTabsStack.Navigator>
         <HomeTabsStack.Screen name="HomeTabs" component={Tabs} options={sharedStyled} options={{headerShown: false}}/>
         <HomeTabsStack.Screen name="ModalQuizz" component={ModalQuizz} options={sharedStyled} options={{headerShown: false}}/>
+        <HomeTabsStack.Screen name="ModalCustomQuizz" component={ModalCustomQuizz} options={sharedStyled} options={{headerShown: false}}/>
     </HomeTabsStack.Navigator>
 );
 

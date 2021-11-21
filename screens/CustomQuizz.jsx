@@ -7,7 +7,7 @@ import allPanneaux from '../panneaux/allPanneaux';
 import interdiction from '../panneaux/interdiction';
 import panneauxObligation from '../panneaux/obligation';
 
-const CustomQuizz = () => {
+const CustomQuizz = ({ navigation }) => {
   const quizzCategorie = [
     {
       key: 1,
@@ -32,12 +32,14 @@ const CustomQuizz = () => {
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.categorieContainer}>
-              <View style={styles.singlePanneauxAdd}>
-                <AddQuizzCard />
-              </View>
+          <TouchableOpacity style={styles.singlePanneauxAdd} onPress={() => navigation.navigate('ModalCustomQuizz')}> 
+            <View>
+              <AddQuizzCard />
+            </View>
+          </TouchableOpacity>
               {quizzCategorie.map(({ title, panneauxSelection, panneaux, key }, index) => (
                 <View style={styles.singlePanneaux} key={`${index}-${title}`}>
-                  <TouchableOpacity onPress={() => navigation.navigate('ModalQuizz', {title: title, panneaux: useRandom(panneaux), key: key})}>
+                  <TouchableOpacity onPress={() => navigation.navigate('ModalCustomQuizz', {title: title, panneaux: useRandom(panneaux), key: key})}>
                     <SelectionCard panneauxNb={panneauxSelection.length} panneauxId={panneauxSelection} title={title}/>
                   </TouchableOpacity>
                 </View>
